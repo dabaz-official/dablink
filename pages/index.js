@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Header from '../components/Header'
+import Links from '../components/Links'
 
 export default function Home() {
   return (
@@ -11,9 +12,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <Header />
+        <Links />
       </main>
     </div>
   )
