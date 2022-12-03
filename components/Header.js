@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="mt-[1em] text-center flex flex-col align-middle">
+    <header className="mt-[2em] text-center flex flex-col align-middle">
       <img 
         src="/dabaz.jpg" 
         alt="DabAZ"
