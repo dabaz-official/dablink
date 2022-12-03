@@ -35,17 +35,20 @@ const links = [
 
 export default function Links() {
   return (
-    <ul>
+    <ul className="list-none mx-auto my-8 grid grid-cols-1 gap-y-4 text-center max-w-xs">
       {links.map((link) => (
-        <li key={link.name}>
-          <a
-            href={link.href}
-            className=""
-            target="_blank"
+        <a
+          href={link.href}
+          className="bg-white/30 backdrop-blur-[10px] p-[0.9em] border border-gray-50 rounded-2xl shadow-md hover:bg-white transition duration-200"
+          target="_blank"
+        >
+          <li
+            key={link.name}
+            className="text-lg"
           >
             {link.name}
-          </a>
-        </li>
+          </li>
+        </a>
       ))}
     </ul>
   )
